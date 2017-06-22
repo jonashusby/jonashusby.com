@@ -1,0 +1,202 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #fbfbfb;
+  color: #1e1e1e;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  color: #1e1e1e;
+}
+.Wrapper {
+  height: 100%;
+}
+.Header,
+.Footer {
+  font-size: 1em;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  overflow: auto;
+  padding: 40px 20px;
+  background-color: #fff;
+}
+@media (min-width: 700px) {
+  .Header,
+  .Footer {
+    padding: 50px;
+  }
+}
+@media (min-width: 1000px) {
+  .Header,
+  .Footer {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+.Header-logo,
+.Footer-logo {
+  display: block;
+  float: left;
+}
+.Header-contact,
+.Footer-contact {
+  display: block;
+  float: right;
+}
+.Main {
+  display: none;
+  text-align: center;
+  padding: 20px;
+}
+@media (min-width: 700px) {
+  .Main {
+    padding: 50px;
+  }
+}
+@media (min-width: 1000px) {
+  .Main {
+    padding: 100px;
+  }
+}
+.Works {
+  padding: 40px 20px 20px;
+}
+@media (min-width: 700px) {
+  .Works {
+    padding: 50px;
+  }
+}
+@media (min-width: 1000px) {
+  .Works {
+    padding: 100px;
+  }
+}
+.Works-project {
+  position: relative;
+  width: 100%;
+  margin-bottom: 40px;
+}
+@media (min-width: 700px) {
+  .Works-project {
+    margin-bottom: 100px;
+  }
+}
+@media (min-width: 1000px) {
+  .Works-project {
+    margin-bottom: 200px;
+  }
+}
+.Works-project-img {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.27);
+  -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.27);
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.27);
+}
+.Works-project-img:hover {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.27);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.27);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.27);
+}
+.Works-project-info {
+  display: none;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+@media (min-width: 700px) {
+  .Works-project-info {
+    padding: 50px;
+  }
+}
+@media (min-width: 1000px) {
+  .Works-project-info {
+    padding: 100px;
+  }
+}
+.Works-project-info-child {
+  position: relative;
+  background-color: #000;
+  color: #fff;
+  height: 100%;
+  padding: 40px;
+}
+@media (min-width: 700px) {
+  .Works-project-info-child {
+    padding: 100px;
+  }
+}
+@media (min-width: 1000px) {
+  .Works-project-info-child {
+    padding: 100px;
+  }
+}
+.Works-project-info-child-close {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 30px;
+  height: 30px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.Works-project-info-child-close:hover {
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+}
+@media (min-width: 700px) {
+  .Works-project-info-child-close {
+    top: 50px;
+    right: 50px;
+  }
+}
+@media (min-width: 1000px) {
+  .Works-project-info-child-close {
+    top: 100px;
+    right: 100px;
+  }
+}
+.Works-project-info-child-close svg path {
+  stroke: #fff;
+  fill: transparent;
+  stroke-width: 6;
+  width: 30px;
+  height: 30px;
+}
+.Works-project-info-child-title {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  line-height: 150%;
+  font-weight: bold;
+}
+.Works-project-info-child-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  line-height: 1.6em;
+  letter-spacing: 150%;
+}
+.Works-project-info-child-link {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  display: block;
+  color: #fff;
+}
+.Footer {
+  text-align: center;
+}
