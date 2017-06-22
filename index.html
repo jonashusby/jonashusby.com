@@ -1,0 +1,112 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Jonas Husby | Portfolio</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:900|Roboto:100" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    
+    <script>
+        $(function(){
+            $('.Works-project-link').on('click', function(e){
+                e.preventDefault();
+                $(this).siblings('.Works-project-info').css({ 'display':'block' });
+            });
+            $('.Works-project-info-child-close').on('click', function(){
+                $(this).closest('.Works-project-info').css({ 'display':'none' });
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="Wrapper">
+    <header class="Header">
+        <span class="Header-logo">Jonas Husby</span>
+        <span class="Header-contact">
+            <a href="mailto:hei@jonashusby.com">
+                hei@jonashusby.com
+            </a>
+        </span>
+    </header>
+    <main class="Main">
+        <h1>Prosjekter</h1>
+    </main>
+    <div class="Works">
+        <section class="Works-project">
+            <a class="Works-project-link" href="">
+                <img class="Works-project-img" src="img/karn.jpg">
+            </a>
+            <div class="Works-project-info">
+                <section class="Works-project-info-child">
+                    <span class="Works-project-info-child-close">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 50 50" style="enable-background:new 0 0 42 24;" xml:space="preserve">
+                            <path d="M 10,10 L 40,40 M 40,10 L 10,40" />
+                        </svg>
+                    </span>
+                    <h1 class="Works-project-info-child-title">
+                        Klubb Alfa Romeo Norge
+                    </h1>
+                    <p class="Works-project-info-child-text">
+                        Klubb Alfa Romeo Norges nettsider er under oppussing. Den nye løsningen vil ha et særdeles stort fokus på å samle og strukturere de ulike elementene i klubben på en mer oversiktlig måte. Forsidens hovedmål vil være å trekke nye medlemmer.
+                    </p>
+                </section>
+            </div>
+        </section>
+        <section class="Works-project">
+            <a class="Works-project-link" href="">
+                <img class="Works-project-img" src="img/ungenergi.jpg">
+            </a>
+            <div class="Works-project-info">
+                <section class="Works-project-info-child">
+                    <span class="Works-project-info-child-close">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 50 50" style="enable-background:new 0 0 42 24;" xml:space="preserve">
+                            <path d="M 10,10 L 40,40 M 40,10 L 10,40" />
+                        </svg>
+                    </span>
+                    <h1 class="Works-project-info-child-title">
+                        UngEnergi
+                    </h1>
+                    <p class="Works-project-info-child-text">
+                        UngEnergi er en læringsportal for ungdommer på VGS & US. Her kan man lære, på en lettlest og spennende måte, om fornybar energi og teknologi. Læringsportalen er et prosjekt under CenSES ved NTNU, og har vært på nett siden 2012. Løsningen er bygget på WordPress, og SEO er en viktig del av arbeidet.
+                    </p>
+                    <a href="http://www.ungenergi.no" target="_blank" class="Works-project-info-child-link">Til siden -></a>
+                </section>
+            </div>
+        </section>
+        <section class="Works-project">
+            <a class="Works-project-link" href="">
+                <img class="Works-project-img" src="img/now.jpg">
+            </a>
+            <div class="Works-project-info">
+                <section class="Works-project-info-child">
+                    <span class="Works-project-info-child-close">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 50 50" style="enable-background:new 0 0 42 24;" xml:space="preserve">
+                            <path d="M 10,10 L 40,40 M 40,10 L 10,40" />
+                        </svg>
+                    </span>
+                    <h1 class="Works-project-info-child-title">
+                        Nordic Ocean Watch
+                    </h1>
+                    <p class="Works-project-info-child-text">
+                        Nordic Ocean Watch er en miljøorganisasjon, som fokuserer på havet. I dette prosjektet har jeg bistått med frontendutvikling og designråd, i samarbeid med en designer.
+                    </p>
+                    <a href="http://www.nordicoceanwatch.no" target="_blank" class="Works-project-info-child-link">Til siden -></a>
+                </section>
+            </div>
+        </section>
+    </div><!-- end .Works -->
+
+</div><!-- end .Wrapper -->
+</body>
+</html>

@@ -1,0 +1,156 @@
+$mobileSpacing = 20px
+$tabletSpacing = 50px
+$desktopSpacing = 100px
+$tabletMinWidth = 700px
+$desktopMinWidth= 1000px
+$bg = rgb(251,251,251)
+$textColor = rgb(30,30,30)
+$white = rgb(255,255,255)
+
+html, body
+	width: 100%
+	height: 100%
+	background-color: $bg
+	color: $textColor
+*
+	box-sizing: border-box
+a
+	color: $textColor
+.Wrapper
+	height: 100%
+.Header
+	font-size: 1em
+	font-family: "Roboto", sans-serif
+	text-transform: uppercase
+	overflow: auto
+	padding: $mobileSpacing*2 $mobileSpacing
+	background-color: $white
+	@media (min-width: $tabletMinWidth)
+		padding: $tabletSpacing
+	@media (min-width: $desktopMinWidth)
+		padding-left: $desktopSpacing
+		padding-right: $desktopSpacing
+	&-logo
+		display: block
+		float: left
+	&-contact
+		display: block
+		float: right
+.Main
+	display: none
+	text-align: center
+	padding: $mobileSpacing
+	@media (min-width: $tabletMinWidth)
+		padding: $tabletSpacing
+	@media (min-width: $desktopMinWidth)
+		padding: $desktopSpacing
+.Works
+	padding: $mobileSpacing*2 $mobileSpacing $mobileSpacing
+	@media (min-width: $tabletMinWidth)
+		padding: $tabletSpacing
+	@media (min-width: $desktopMinWidth)
+		padding: $desktopSpacing
+	&-project
+		position: relative
+		width: 100%
+		margin-bottom: $mobileSpacing*2
+		@media (min-width: $tabletMinWidth)
+			margin-bottom: $tabletSpacing*2
+		@media (min-width: $desktopMinWidth)
+			margin-bottom: $desktopSpacing*2
+		&-img
+			cursor: pointer
+			display: block
+			width: 100%
+			max-width: 100%
+			max-height: 100%
+			transition: all 0.2s
+			-webkit-transition: all 0.2s
+
+			-webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.27);
+			-moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.27);
+			box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.27);
+			&:hover
+				-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.27);
+				-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.27);
+				box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.27);
+
+		&-info
+			display: none
+			z-index: 10
+			position: fixed
+			top: 0
+			left: 0
+			height: 100%
+			width: 100%
+			padding: 0
+			@media (min-width: $tabletMinWidth)
+				padding: $tabletSpacing
+			@media (min-width: $desktopMinWidth)
+				padding: $desktopSpacing
+			&-child
+				position: relative
+				background-color: black
+				color: white
+				height: 100%
+				padding: $mobileSpacing * 2
+				@media (min-width: $tabletMinWidth)
+					padding: $tabletSpacing * 2
+				@media (min-width: $desktopMinWidth)
+					padding: $desktopSpacing
+				&-close
+					cursor: pointer
+					display: block
+					position: absolute
+					top: $mobileSpacing * 2
+					right: $mobileSpacing * 2
+					width: 30px
+					height: 30px
+					-webkit-transition: all 0.3s ease
+					transition: all 0.3s ease
+					&:hover
+						-webkit-transform: scale(0.8)
+						transform: scale(0.8)
+					@media (min-width: $tabletMinWidth)
+						top: $tabletSpacing
+						right: $tabletSpacing
+					@media (min-width: $desktopMinWidth)
+						top: $desktopSpacing
+						right: $desktopSpacing
+					svg
+						path
+							stroke: white
+							fill: transparent
+							stroke-width: 6
+							width: 30px
+							height: 30px
+
+				&-title
+					margin: 0
+					font-family: "Raleway", sans-serif
+					text-transform: uppercase
+					font-size: 2em
+					line-height: 150%
+					font-weight: bold
+				&-text
+					font-family: "Roboto", sans-serif
+					font-size: 1em
+					line-height: 1.6em
+					letter-spacing: 150%
+				&-link
+					font-family: "Roboto", sans-serif
+					text-transform: uppercase
+					display: block
+					color: white
+				
+
+.Footer
+	@extend .Header
+	text-align: center
+
+
+
+
+
+
+
